@@ -82,10 +82,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                      &kp Y                   &kp U  &kp I      &kp O    &lt 5 P
-&mt LCTRL A       &kp S         &kp D         &kp F                        &kp G      &kp TAB                          &kp MINUS      &kp H                   &kp J  &kp K      &kp L    &mt RCTRL BACKSPACE
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B      &kp COLON                        &kp RIGHT_ALT  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 6 LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &kp SPACE  &lt_to_layer_0 5 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 2 ENTER                             &kp ESCAPE
+&mt LS(LCTRL) Q   &kp W         &kp E         &kp R                        &kp T                                                        &kp Y                   &kp U  &kp I      &kp O    &lt 5 P
+&mt LCTRL A       &mt LC(Q) S   &kp D         &kp F                        &kp G        &kp TAB                          &kp QUESTION   &kp H                   &kp J  &kp K      &kp L    &mt RCTRL MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp EXCL                         &kp RIGHT_ALT  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE
+&lt 6 UNDER       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt 3 SPACE  &lt_to_layer_0 5 LANGUAGE_1      &kp TAB        &lt_to_layer_0 2 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -93,10 +93,10 @@
 
         ARROW {
             bindings = <
-&kp AMPS         &trans         &trans            &trans          &trans                                                     &kp HOME               &kp PAGE_UP      &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES  &kp PIPE
-&kp EXCLAMATION  &kp HASH       &kp PAGE_DOWN     &kp END         &trans                &trans             &trans            &kp LEFT               &kp DOWN         &kp UP             &kp RIGHT_ARROW    &kp AT
-&trans           &kp BACKSLASH  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN      &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp SLASH          &kp DOLLAR
-&trans           &trans         &trans            &trans          &trans                &trans             &trans            &trans                                                                        &trans
+&kp AMPS         &kp EQUAL  &trans         &trans   &trans                       &kp HOME  &kp PAGE_UP  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PIPE
+&kp EXCLAMATION  &kp HASH   &kp PAGE_DOWN  &kp END  &trans  &trans      &trans   &kp LEFT  &kp DOWN     &kp UP            &kp RIGHT_ARROW    &kp AT
+&trans           &trans     &trans         &trans   &trans  &trans      &kp DEL  &trans    &trans       &trans            &trans             &kp DOLLAR
+&trans           &trans     &trans         &trans   &trans  &trans      &trans   &trans                                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -111,12 +111,12 @@
             >;
         };
 
-        FUNCTION {
+        SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans         &trans            &trans          &trans                &trans                      &trans  &trans                 &trans           &trans             &trans
+&kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans  &trans      &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN
+&kp ASTERISK   &kp CARET         &kp GRAVE       &kp BACKSLASH         &trans  &trans      &trans  &trans  &kp SLASH              &kp COLON        &kp SEMI           &trans
+&trans         &trans            &trans          &trans                &trans  &trans      &trans  &trans                                                             &trans
             >;
         };
 
@@ -138,7 +138,7 @@
             >;
         };
 
-        Bluetooth {
+        BLUETOOTH {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
