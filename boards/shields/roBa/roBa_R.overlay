@@ -14,12 +14,10 @@
             ;
 };
 
-/ {
-    trackball_listener {
-        status = "okay";
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-    };
+&trackball_listener {
+    status = "okay";
+    device = <&trackball>;
+    input-processors = <&automouse_temp_layer 4 700>;
 };
 
 &pinctrl {
