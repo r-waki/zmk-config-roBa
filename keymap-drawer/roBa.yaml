@@ -12,8 +12,8 @@ layers:
   - O
   - {t: P, h: SCROLL}
   - {t: A, h: LCTRL}
-  - {t: S, h: Ctl+Q}
-  - D
+  - S
+  - {t: D, h: Ctl+Q}
   - F
   - G
   - TAB
@@ -41,7 +41,7 @@ layers:
   - {t: '&to_layer_0 LANGUAGE_2', h: ARROW}
   - {t: SPACE, h: SYMBOL}
   - {t: '&to_layer_0 LANGUAGE_1', h: SCROLL}
-  - TAB
+  - BACKSPACE
   - {t: '&to_layer_0 ENTER', h: NUM}
   - ESCAPE
   ARROW:
@@ -94,11 +94,11 @@ layers:
   - KP 2
   - KP 3
   - +
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
   - F4
-  - {t: ▽, type: trans}
   - /
   - KP 4
   - KP 5
@@ -106,23 +106,23 @@ layers:
   - '*'
   - Ctl+Alt+KP 0
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F5
   - F6
   - F7
   - F8
-  - {t: ▽, type: trans}
   - '%'
   - KP 7
   - KP 8
   - KP 9
   - .
   - '='
+  - RIGHT ALT
   - {t: ▽, type: trans}
   - F9
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
   - '~'
   - ':'
   - KP 0
