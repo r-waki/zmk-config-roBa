@@ -90,9 +90,9 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - '-'
-  - KP 1
-  - KP 2
-  - KP 3
+  - '1'
+  - '2'
+  - '3'
   - +
   - {t: ▽, type: trans}
   - F1
@@ -100,11 +100,11 @@ layers:
   - F3
   - F4
   - /
-  - KP 4
-  - KP 5
-  - KP 6
+  - '4'
+  - '5'
+  - '6'
   - '*'
-  - Ctl+Alt+KP 0
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F5
@@ -112,9 +112,9 @@ layers:
   - F7
   - F8
   - '%'
-  - KP 7
-  - KP 8
-  - KP 9
+  - '7'
+  - '8'
+  - '9'
   - .
   - '='
   - RIGHT ALT
@@ -125,7 +125,7 @@ layers:
   - F12
   - '~'
   - ':'
-  - KP 0
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
