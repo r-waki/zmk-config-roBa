@@ -83,9 +83,9 @@
         default_layer {
             bindings = <
 &mt LS(LCTRL) Q   &kp W         &kp E         &kp R                        &kp T                                                        &kp Y                   &kp U  &kp I      &kp O    &lt 5 P
-&mt LCTRL A       &mt LC(Q) S   &kp D         &kp F                        &kp G        &kp TAB                          &kp QUESTION   &kp H                   &kp J  &kp K      &kp L    &mt RCTRL MINUS
+&mt LCTRL A       &kp S         &mt LC(Q) D   &kp F                        &kp G        &kp TAB                          &kp QUESTION   &kp H                   &kp J  &kp K      &kp L    &mt RCTRL MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp EXCL                         &kp RIGHT_ALT  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE
-&lt 6 UNDER       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt 3 SPACE  &lt_to_layer_0 5 LANGUAGE_1      &kp TAB        &lt_to_layer_0 2 ENTER                             &kp ESCAPE
+&lt 6 UNDER       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANGUAGE_2  &lt 3 SPACE  &lt_to_layer_0 5 LANGUAGE_1      &kp BACKSPACE  &lt_to_layer_0 2 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -104,10 +104,10 @@
 
         NUM {
             bindings = <
-&kp MINUS    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                                           &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&kp SLASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&kp PERCENT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERIOD    &kp EQUAL                    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&kp TILDE    &kp COLON        &kp KP_NUMBER_0  &trans           &trans        &trans                       &trans  &trans                             &trans
+&kp MINUS    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS                                                  &trans  &kp F1  &kp F2   &kp F3   &kp F4
+&kp SLASH    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans         &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&kp PERCENT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERIOD    &kp EQUAL                    &kp RIGHT_ALT  &trans  &kp F9  &kp F10  &kp F11  &kp F12
+&kp TILDE    &kp COLON        &kp KP_NUMBER_0  &trans           &trans        &trans                       &trans         &trans                            &trans
             >;
         };
 
